@@ -32,10 +32,21 @@ nav a {
   padding: 10px;
   background: white;
   font-weight: bold;
-  border-radius: 3px;
-  margin-right: 15px;
+  border-radius: 2px;
+  margin-right: 0.8em;
+  transition: all 0.2s;
   text-decoration: none;
-  color: rgb(0, 110, 255);
+  color: var(--main-vue-color);
+}
+
+nav a:hover {
+  box-shadow: var(--shadow-md);
+  background-color: var(--secondary-vue-color);
+}
+
+.selected-nav {
+  box-shadow: var(--shadow-md);
+  background-color: var(--secondary-vue-color);
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {

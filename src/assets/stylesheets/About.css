@@ -1,0 +1,18 @@
+h3 { margin-top: 0; }
+
+a {
+  font-weight: bold;
+  transition: all 0.2s;
+  color: var(--tundora);
+}
+
+a:hover { color: var(--main-vue-color); }
+
+.content {
+  padding: 1em;
+  background: white;
+}
+
+.awesome-face img {
+  width: 160px;
+}

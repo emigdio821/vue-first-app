@@ -3,7 +3,11 @@
     <div id="app-logo">
       <img alt="Vue logo" src="./assets/logo.png">
     </div>
-    <FirstApp/>
+    <nav>
+      <router-link to="/">Skills</router-link>
+      <router-link to="/about">About</router-link>
+    </nav>
+    <router-view/>
   </div>
 </template>
 
@@ -19,3 +23,4 @@ export default {
 </script>
 
 <style src="./assets/stylesheets/App.css"></style>
+<style src="./assets/stylesheets/Colors.css"></style>

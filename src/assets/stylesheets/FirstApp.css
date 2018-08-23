@@ -1,16 +1,6 @@
 @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 
-:root {
-  --tundora: #494949;
-  --alabaster: #FAFAFA;
-  --buttermilk: #FFECB3;
-  --main-vue-color: #42B883;
-  --secondary-vue-color: #35495E;
-  --lighten-secondary-vue-color: #38516B;
-  --shadow-md: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
 .holder {
   padding: 0.4em;
   background: white;
@@ -66,6 +56,14 @@ p {
   border-radius: 2px;
   margin-top: -0.2em;
   background: var(--buttermilk);
+}
+
+.remove-skill {
+  transition: all 0.2s;
+}
+
+.remove-skill:hover {
+  transform: scale(1.2);
 }
 
 /* = Animations if we do not want to use the CSS animation library = */

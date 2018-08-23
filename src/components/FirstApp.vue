@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <h1>Skills</h1>
     <div class="holder">
       <form @submit.prevent="addSkill">
         <input type="text" id="add-skill" placeholder="Enter a skill you have..." v-model="skill" v-validate="'required|min:5'" name="skill" data-vv-validate-on="none">
@@ -9,10 +10,13 @@
       </form>
       <ul>
         <transition-group name="list" enter-active-class="animated bounceInLeft" leave-active-class="animated bounceOutDown">
-          <li v-for="(data, index) in skills" :key='index'>{{ data.skill }}</li>
+          <li v-for="(data, index) in skills" :key='index'>{{ data.skill }}
+            <i class="fa fa-minus-circle remove-skill" v-on:click="remove(index)" title="Remove"></i>
+          </li>
         </transition-group>
       </ul>
-      <p>These are the skills that you possess. 👀</p>
+      <p v-if="this.skills.length">These are the skills that you possess. 👀</p>
+      <p v-if="this.skills.length <= 0">Seems like there are no skills yet dude. 🐒</p>
     </div>
   </div>
 </template>
@@ -38,10 +42,13 @@ export default {
           this.skill = ''
         }
       });
+    },
+    remove(id) {
+      this.skills.splice(id, 1);
     }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style src="../assets/stylesheets/FirstApp.css" scoped></style>
+<style src="../assets/stylesheets/Colors.css"></style>
