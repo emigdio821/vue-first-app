@@ -1,0 +1,96 @@
+@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+:root {
+  --tundora: #494949;
+  --alabaster: #FAFAFA;
+  --buttermilk: #FFECB3;
+  --main-vue-color: #42B883;
+  --secondary-vue-color: #35495E;
+  --lighten-secondary-vue-color: #38516B;
+  --shadow-md: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.holder {
+  padding: 0.4em;
+  background: white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  padding: 20px;
+  font-size: 1.3em;
+  border-radius: 2px;
+  margin-bottom: 0.2em;
+  transition: all 0.3s;
+  color: var(--alabaster);
+  background-color: var(--secondary-vue-color);
+  border-left: 5px solid var(--main-vue-color);
+}
+
+ul li:hover {
+  box-shadow: var(--shadow-md);
+  background-color: var(--lighten-secondary-vue-color);
+}
+
+p {
+  padding: 30px 0;
+  text-align: center;
+  color: var(--tundora);
+}
+
+.container {
+  box-shadow: 0px 0px 40px lightgray;
+}
+
+#add-skill {
+  border: 0;
+  outline: none;
+  font-size: 1.1em;
+  padding: 14px 20px;
+  border-radius: 2px;
+  margin-bottom: 0.8em;
+  color: var(--tundora);
+  width: calc(100% - 40px);
+  box-shadow: var(--shadow-md);
+}
+
+.alert {
+  padding: 0.5em;
+  font-weight: bold;
+  border-radius: 2px;
+  margin-top: -0.2em;
+  background: var(--buttermilk);
+}
+
+/* = Animations if we do not want to use the CSS animation library = */
+
+/* .alert-in-enter-active {
+  animation: bounce-in 0.3s;
+}
+
+.alert-in-leave-active {
+  animation: bounce-in 0.3s reverse;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
+
+i {
+  float: right;
+  cursor: pointer;
+}
