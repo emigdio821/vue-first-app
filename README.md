@@ -1,5 +1,12 @@
 # vue-first-app
 
+This is just my first Vue app.
+I recommend installing **Vue** using CLI 🤓.
+
+```
+npm install -g @vue/cli
+```
+
 ## Project setup
 ```
 yarn install
