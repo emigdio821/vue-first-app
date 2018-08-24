@@ -3,6 +3,8 @@
 This is just my first Vue app.
 I recommend installing **Vue** using CLI 🤓.
 
+**Node** and **Yarn** are required.
+
 ```
 npm install -g @vue/cli
 ```
